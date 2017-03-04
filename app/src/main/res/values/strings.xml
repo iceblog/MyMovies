@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyMovies</string>
+    <string name="action_settings">设置</string>
+    <string name="action_hot">热门电影</string>
+</resources>

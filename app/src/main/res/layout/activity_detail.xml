@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:background="@color/colorBlack">
+
+        <ImageView
+            android:layout_width="@dimen/detail_img_with"
+            android:layout_height="@dimen/detail_img_height"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/move_img"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:text="电影名称"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/movie_title"
+            android:textSize="20sp"
+            android:layout_alignTop="@+id/move_img"
+            android:layout_toRightOf="@+id/move_img"
+            android:layout_toEndOf="@+id/move_img"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:text="评分"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vote_average"
+            android:textSize="18sp"
+            android:layout_below="@+id/movie_title"
+            android:layout_alignLeft="@id/movie_title"
+            android:layout_marginTop="30dp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:text="上映时间"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/movie_date"
+            android:textSize="18sp"
+            android:layout_below="@+id/movie_title"
+            android:layout_alignLeft="@id/movie_title"
+            android:layout_marginTop="60dp"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+
+    <TextView
+        android:text="电影简介"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/movie_overview" />
+</LinearLayout>
