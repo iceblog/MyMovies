@@ -56,9 +56,14 @@ public class MoviesFragment extends Fragment {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if(id==R.id.action_hot){
+        if(id==R.id.hot_movies){
             FetchMoviesTask moviesTask = new FetchMoviesTask();
             moviesTask.execute("top_rated");
+            return true;
+        }
+        if(id==R.id.popular_movies){
+            FetchMoviesTask moviesTask = new FetchMoviesTask();
+            moviesTask.execute("popular");
             return true;
         }
         return super.onOptionsItemSelected(item);

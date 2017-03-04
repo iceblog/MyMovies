@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item android:id="@+id/action_hot"
+    <item android:id="@+id/popular_movies" android:title="流行电影"/>
+    <item android:id="@+id/hot_movies"
         android:title="@string/action_hot" />
 </menu>
